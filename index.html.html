@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Standoff 2 Free Code</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .code {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .ad-container {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Standoff 2 Free Code</h1>
+  <button class="button" onclick="generateCode()">Получить код</button>
+  <div id="codeContainer"></div>
+
+  <div class="ad-container" id="adContainer"></div>
+
+  <script>
+    var codes = [
+      'AB5YPY3HUQYS', 'CD6ZQZ4JITXD', 'EF7ARX5KSHUQ', 'GH8BSY6LGVWT', 'IJ9CTW7MHFRS', 'KL0DVU8NIEPG', 'MN1EWV9OJHQF', 'OP2FXU0PKIRG',
+      'QR3GYV1QLJSZ', 'СТ4ХЗВ2МРКТУ', 'UV5IAZ3NSLVB', 'WX6JBA4OTMCN', 'YZ7KB5PUMNOD', '12AC83Y4QS5D', '34DE95Z6RT7F', '56FG07A8UY9H',
+      '78HI29B0WI1J', '9KJL3CM4EV5N', 'PQR6ST7DFG8H', 'UVW9XY0Z12AB', 'CDE3FG4HIJ5K', 'LMN6OP7QRS8T', 'UWX9YZ0ABC12', 'DEF3GHI4JKL5',
+      'OPQ6RST7UVW8', 'XYZ9ABC012DE', 'ФГХИ3456ДЖКЛМ', 'STU78VW9XY0Z', 'ABCDEF3GHI4J', 'УВВЖКЛМН6ОП7', 'STUVWXY9Z012', '34567AB8CDE9',
+      'HIJ0KLM1NOP2', 'UVW3XYZ4ABCD', 'OPQ67RST8UV9', '0123ABC4DEFG', '5678HIJ9KLMN', 'UVWX0YZ12ABC', '3DEFG4HIJKLM', 'NOPQR5STUVW6',
+      'XYZ9AB01CDEF', 'GHIJ2KLMN345', 'UVWX6YZ78ABC', '0DEFGH1IJKL2', 'NOPQRSTU3VWX', 'YZ01234ABCDE', 'GHI5JKLM67NO', '9STUVWXY0Z12',
+      '3456AB7CDEFG', 'HIJ89KLMNOPQ', 'STUV7WXYZ012', '8CDEF9GHIJ01', 'KLMNO234PQRS', 'UVWX5YZ678AB', '01CDE2FGHI34', 'LMN5OPQR67ST',
+      'UVWXY89Z0ABC', '3DEFG4HIJ56K', 'NOP7QRSTU8VW', 'XYZ01234ABCD', 'EFG567HIJKLM', '8NOPQR9STUVW', '0WXYZ1AB2CDE', 'GHIJ345KLMNO',
+      'RSTU678VWXYZ', '0123ABCDE4FG', '5HIJKLM6NOPQ', 'РСТЮВW7XYZ89'
+    ];
+
+    function generateCode() {
+      var randomIndex = Math.floor(Math.random() * codes.length);
+      var code = codes[randomIndex];
+
+      var codeContainer = document.getElementById('codeContainer');
+      codeContainer.innerHTML = '<div class="code">' + code + '</div>';
+
+      showAd();
+    }
+
+    function showAd() {
+      var adContainer = document.getElementById('adContainer');
+      adContainer.innerHTML = '<img src="your-ad-image.png" alt="Ad">';
+      // Замініть 'your-ad-image.png' на шлях до вашого рекламного зображення
+    }
+  </script>
+</body>
+</html>
+
